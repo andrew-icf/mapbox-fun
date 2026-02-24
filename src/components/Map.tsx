@@ -66,7 +66,7 @@ const Map = forwardRef((props: MapProps, ref ) => {
   // Store User drawings in localStorage
   function storeDrawings(data:any) {
     // Reset local storage
-    if (!data || !data.features || data.features.length === 0) {
+    if (!data?.features?.length) {
       localStorage.removeItem('user_drawings');
       return;
     } else {
