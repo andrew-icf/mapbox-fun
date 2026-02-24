@@ -152,11 +152,11 @@ const Map = forwardRef((props: MapProps, ref ) => {
     });
 
     // Map Functionality
-    map.current.on('draw.create', updateArea);
-    map.current.on('draw.delete', updateArea);
-    map.current.on('draw.update', updateArea);
+    map.current.on('draw.create', updateMap);
+    map.current.on('draw.delete', updateMap);
+    map.current.on('draw.update', updateMap);
 
-    function updateArea(e:any) {
+    function updateMap(e:any) {
         const data = draw.current?.getAll();
         // Applying colors on new features
         if (e.type === 'draw.create' && e.features) {
