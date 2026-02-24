@@ -36,10 +36,9 @@ yarn install
 
 ### 3. Mapbox access token
 
-1. The provided access token is the default public token provided by Mapbox. There should be no need to generate a new token. However if that is not the case follow the below steps.
-2. Sign up for a free Mapbox account at [mapbox.com](https://account.mapbox.com/auth/signup/)
-3. Get your access token from your [Mapbox account dashboard](https://account.mapbox.com/access-tokens/)
-4. Open `src/components/Map.tsx` and replace the placeholder token:
+1. Sign up for a free Mapbox account at [mapbox.com](https://account.mapbox.com/auth/signup/)
+2. Get your access token from your [Mapbox account dashboard](https://account.mapbox.com/access-tokens/)
+3. Open `src/components/Map.tsx` and replace the placeholder token:
 ```typescript
 const token = 'YOUR_MAPBOX_TOKEN_HERE';
 ```
